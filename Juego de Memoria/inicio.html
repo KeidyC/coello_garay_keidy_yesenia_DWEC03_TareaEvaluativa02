@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="fondo-juego">
+    <div class="contenedor-inicio">
+      <div class="titulo-inicio">
+        <h1>Bienvenido al Juego de Memoria</h1>
+      </div>
+      <div class="logo-inicio">
+        <img src="img/logo.webp" alt="logo-inicio" />
+      </div>
+
+      <div class="instruciones">
+        <h2>Instrucciones del juego:</h2>
+        <p>
+          El objetivo del juego es memorizar la secuencia mostrada en el
+          tablero, las casillas se iluminaran en un orden y luego tendrás que
+          reproducirlas en ese mismo orden. De acuerdo al nivel que elijas las
+          secuencias tendrán mas dificultad Ganaras cuando completes la
+          secuencia sin errores. Perderás si se te agota el tiempo o cometes
+          algún error.
+        </p>
+      </div>
+
+      <div class="botones-inicio">
+        <h3>Seleciona un Nivel</h3>
+        <button class="btn-inicio" data-nivel="facil">Fácil</button>
+        <button class="btn-inicio" data-nivel="medio">Medio</button>
+        <button class="btn-inicio" data-nivel="dificil">Difícil</button>
+      </div>
+    </div>
+
+    <script src="js/inicio.js"></script>
+  </body>
+</html>

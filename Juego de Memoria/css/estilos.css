@@ -1,0 +1,265 @@
+:root {
+    --color-primario: #08232F;
+    --color-secundario: #022738;
+    --color-bordes: #1A5A5B;
+    --color-botones-activo: #1DE7EB;
+    --color-botones: #D9D9D9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html{
+    font-size: 62.5%;
+    color: #fff;
+}
+
+body{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover; 
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    font-size: 16px;
+}
+
+.fondo-login{
+    background-image: url("../img/img-login.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.fondo-juego{
+    background-image: url("../img/fondo.jpg");
+}
+
+.contenedor-login{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 40rem;
+    background-color: rgba(0, 245, 250, 0.27);
+    border: 0.3rem solid var(--color-bordes);
+    border-radius: 2rem;
+}
+
+.login{
+    color: var(--color-secundario);
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input{
+    width: 70%;
+    padding: 1.2rem;
+    margin: 0.5rem 0;
+    border-radius: 2rem;
+    border: 0.2rem solid #fff;
+    background-color: rgba(0, 245, 250, 0.36); 
+}
+
+input::placeholder{
+    color: var(--color-bordes);
+}
+
+.btn{
+    padding: 1rem;
+    border: none
+}
+
+#btn-login{
+    width: 70%;
+    background: var(--color-secundario);
+    border-radius: 5rem;
+    margin-top: 5rem; 
+    color: #fff;
+}
+
+#mensaje-error{
+    color: red; 
+    display: none;
+}
+.error {
+    color: red;
+    font-size: 2rem;
+}
+
+/* Pantalla Inicio */
+.contenedor-inicio{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-inicio{
+    width: 50%;
+    height: 15rem;
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.logo-inicio{
+    height: 15rem;
+    margin-bottom: 2rem;
+}
+
+.logo-inicio img{
+    height: 100%;
+    border-radius: 2rem;
+}
+
+.instruciones{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 0.3rem solid var(--color-secundario);
+    background: rgba(217, 217, 217, 0.22);
+    text-align: start;
+}
+
+.instruciones h2{
+    font-size: 3.5rem;
+    padding: 1rem;
+}
+
+.instruciones p{
+    font-size: 2.3rem;
+    color: var(--color-primario);
+}
+
+.botones-inicio h3{
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+   
+.btn-inicio{
+    background: rgba(217, 217, 217, 0.22);
+    border: 2px solid var(--color-secundario);
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+/* Pantalla Juego */
+.contenedor-juego {
+   display: flex;
+}
+
+.niveles{
+    height: 20rem;
+    font-size: 3rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.puntos-tiempo{
+    width: 20%;
+    margin-left: 3rem;
+    font-size: 4rem;
+    color: var(--color-primario);
+}
+
+.contenedor-tablero{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tablero {
+    display: grid;
+    background: rgba(217, 217, 217, 0.22);
+}
+
+.casilla {
+    border: 0.1rem solid #333;
+    width: 6rem;
+    height: 6rem;
+    cursor: pointer;
+}
+
+.casilla.incorrecta {
+    background-color: red !important; 
+}
+
+.resaltada {
+    background-color: #4CAF50;
+}
+
+.botones-juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.botones-juego button {
+    width: 40%;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 3rem;
+}
+
+.btn-juego.seleccionado{
+    background: #1DE7EB;
+    color: black;
+}
+
+.mensaje {
+    color: red;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1rem;
+    display: none; 
+}
+
+/* Pantalla de Fin de Juego */
+.titulo{
+    font-size: 4rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.img-copa{
+    text-align: center;
+    height: 30rem;
+}
+
+.img-copa img{
+    height: 100%;
+}
+
+.resultados{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btn{
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    margin-top: 2rem;
+    background-color:  var(--color-botones);
+    font-size: 2rem;
+    color: var(--color-primario)
+}
+

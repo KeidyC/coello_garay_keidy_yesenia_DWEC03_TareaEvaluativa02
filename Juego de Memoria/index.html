@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="fondo-login">
+    <div class="contenedor-login">
+      <h1 class="login">LOGIN</h1>
+      <form action="/login" id="formulario" method="POST">
+        <input type="text" placeholder="Username" id="user" />
+        <input type="password" placeholder="Password" id="password" />
+        <button type="submit" id="btn-login" class="btn">LOGIN</button>
+        <div id="mensaje-error"></div>
+      </form>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

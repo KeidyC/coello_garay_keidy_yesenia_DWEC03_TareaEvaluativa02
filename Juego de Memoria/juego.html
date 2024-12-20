@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body class="fondo-juego">
+    <div class="niveles">
+      <p>Nivel <span id="nivel-actual">Principiante</span></p>
+      <p>Sesión: <span id="temporizador-sesion">100</span>s</p>
+    </div>
+
+    <div class="contenedor-juego">
+      <div class="puntos-tiempo">
+        <p>Puntos: <span id="puntos">0</span></p>
+        <p>Tiempo: <span id="tiempo">0:00</span></p>
+      </div>
+      <div class="contenedor-tablero">
+        <div class="tablero"></div>
+      </div>
+
+      <div class="botones-juego">
+        <button class="btn-juego" data-nivel="facil">Fácil</button>
+        <button class="btn-juego" data-nivel="medio">Medio</button>
+        <button class="btn-juego" data-nivel="dificil">Difícil</button>
+        <button id="salir" class="btn">Salir</button>
+      </div>
+    </div>
+    <div id="mensaje-juego" class="mensaje"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/resultados.js"></script>
+  </body>
+</html>
